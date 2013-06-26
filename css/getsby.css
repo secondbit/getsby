@@ -1,0 +1,149 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.25em;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.75em;
+	line-height: 1.85em;
+}
+
+.navbar .brand {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.8em;
+	line-height: 1.9em;
+	padding: 0.5em 20px 0.5em 45px;
+	text-transform: uppercase;
+}
+
+.purple {
+	color: #660b55;
+}
+
+div#strategies h1, div#strategies a, div#strategies a:hover, div#strategies blockquote {
+	color: #660b55;
+}
+
+div#strategies blockquote {
+	border-left-color: #660b55;
+}
+
+.red {
+	color: #c90502;
+}
+
+div#challenges h1, div#challenges a, div#challenges a:hover, div#challenges blockquote {
+	color: #c90502;
+}
+
+div#challenges blockquote {
+	border-left-color: #c90502;
+}
+
+.orange {
+	color: #f25516;
+}
+
+div#medication h1, div#medication a, div#medication a:hover, div#medication blockquote {
+	color: #f25516;
+}
+
+div#medication blockquote {
+	border-left-color: #f25516;
+}
+
+.yellow {
+	color: #ffa30d;
+}
+
+div#diagnosis h1, div#diagnosis a, div#diagnosis a:hover, div#diagnosis blockquote {
+	color: #ffa30d;
+}
+
+div#diagnosis blockquote {
+	border-left-color: #ffa30d;
+}
+
+.green {
+	color: #738a02;
+}
+
+div#introduction h1, div#introduction a, div#introduction a:hover, div#introduction blockquote {
+	color: #738a02;
+}
+
+div#introduction blockquote {
+	border-left-color: #738a02;
+}
+
+.sidebar-nav .nav a {
+	color: #515151;
+}
+
+.sidebar-nav .nav .active a, .sidebar-nav .nav a:hover {
+	color: inherit;
+}
+
+.sidebar-nav .nav li {
+	font-size: 1.5em;
+	line-height: 1.25em;
+	list-style-type: none;
+}
+
+.sidebar-nav .nav li.active {
+	list-style-type: disc;
+}
+
+.headshot {
+	max-width: 100%;
+	margin: 0px auto .5em;
+}
+
+.sidebar-nav  li.nav-header {
+	text-align: center;
+	line-height: 1.25em;
+	font-size: 1.25em;
+	margin-bottom: 1em;
+}
+
+.sidebar-nav .name {
+	font-size: 1.4em;
+}
+
+#introduction p {
+	font-size: 1.3em;
+	line-height: 1.35em;
+}
+
+#introduction h1 {
+	line-height: 1.2em;
+}
+
+blockquote {
+	line-height: 1.3em;
+	font-size: 1.4em;
+}
+
+.sidebar-nav {
+	position: fixed;
+	width: inherit;
+	top: 20px;
+}
+
+#footer {
+	padding-top: 25px;
+	margin-top: 25px;
+	border-top: 1px #515151 solid;
+}
+
+#footer h1 {
+	font-size: 1em;
+	line-height: 1.25em;
+}
+
+#footer p {
+	font-size: .85em;
+	line-height: 1.25em;
+}
