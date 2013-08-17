@@ -3118,16 +3118,49 @@ input[type="button"].btn-block {
   position: relative;
 }
 article h2:nth-of-type(1) {
-  color: #ea5930;
+    color: #ea5930;
 }
 article h2:nth-of-type(2) {
-  color: #f8af1e;
+    color: #f8af1e;
 }
 article h2:nth-of-type(3) {
-  color: #097380;
+    color: #097380;
 }
 article h2:nth-of-type(4) {
-  color: #372560;
+    color: #563d7c;
+}
+
+article h2:nth-of-type(1) ~ *:not(h2) a {
+    color: #ea5930;
+}
+article h2:nth-of-type(2) ~ *:not(h2) a {
+    color: #f8af1e;
+}
+article h2:nth-of-type(3) ~ *:not(h2) a {
+    color: #097380;
+}
+article h2:nth-of-type(4) ~ *:not(h2) a {
+    color: #563d7c;
+}
+
+article h2:nth-of-type(1) ~ blockquote {
+    color: #ea5930;
+    border-color: #ea5930;
+}
+article h2:nth-of-type(2) ~ blockquote {
+    color: #f8af1e;
+    border-color: #f8af1e;
+}
+article h2:nth-of-type(3) ~ blockquote {
+    border-color: #097380;
+    color: #097380;
+}
+article h2:nth-of-type(4) ~ blockquote {
+    border-color: #372560;
+    color: #563d7c;
+}
+article a {
+    text-decoration: underline;
 }
 .clearfix:before,
 .clearfix:after {
