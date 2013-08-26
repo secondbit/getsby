@@ -1770,16 +1770,16 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #372560;
-  border-color: #2c1e4e;
+  background-color: #563d7c;
+  border-color: #4a356b;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active {
   color: #ffffff;
-  background-color: #261a43;
-  border-color: #130d21;
+  background-color: #433061;
+  border-color: #2e2042;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -1796,8 +1796,8 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #372560;
-  border-color: #2c1e4e;
+  background-color: #563d7c;
+  border-color: #4a356b;
 }
 .btn-link {
   color: #097380;
@@ -2205,8 +2205,8 @@ input[type="button"].btn-block {
   position: relative;
   min-height: 50px;
   margin-bottom: 25px;
-  background-color: #372560;
-  border: 1px solid #291c48;
+  background-color: #563d7c;
+  border: 1px solid #473266;
 }
 .navbar:before,
 .navbar:after {
@@ -2272,7 +2272,7 @@ input[type="button"].btn-block {
 }
 .navbar-collapse {
   padding: 5px 15px;
-  border-top: 1px solid #281b46;
+  border-top: 1px solid #453164;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   max-height: 340px;
   overflow-x: visible;
@@ -2402,7 +2402,7 @@ input[type="button"].btn-block {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #291c48;
+  background-color: #473266;
 }
 .navbar-nav > .disabled > a,
 .navbar-nav > .disabled > a:hover,
@@ -2438,7 +2438,7 @@ input[type="button"].btn-block {
   .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
-    background-color: #291c48;
+    background-color: #473266;
   }
   .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -2463,8 +2463,8 @@ input[type="button"].btn-block {
   margin-left: -15px;
   margin-right: -15px;
   padding: 10px 15px;
-  border-top: 1px solid #281b46;
-  border-bottom: 1px solid #281b46;
+  border-top: 1px solid #453164;
+  border-bottom: 1px solid #453164;
   margin-top: 5.5px;
   margin-bottom: 5.5px;
 }
@@ -2522,7 +2522,7 @@ input[type="button"].btn-block {
 .navbar-nav > .open > a,
 .navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
-  background-color: #291c48;
+  background-color: #473266;
   color: #555555;
 }
 .navbar-nav > .open > a .caret,
@@ -3117,50 +3117,44 @@ input[type="button"].btn-block {
 .bs-header .container {
   position: relative;
 }
-article h2:nth-of-type(1) {
-    color: #ea5930;
+.bs-header .intro a {
+  color: #563d7c;
+  text-decoration: underline;
 }
-article h2:nth-of-type(2) {
-    color: #f8af1e;
-}
-article h2:nth-of-type(3) {
-    color: #097380;
-}
-article h2:nth-of-type(4) {
-    color: #563d7c;
-}
-
-article h2:nth-of-type(1) ~ *:not(h2) a {
-    color: #ea5930;
-}
-article h2:nth-of-type(2) ~ *:not(h2) a {
-    color: #f8af1e;
-}
-article h2:nth-of-type(3) ~ *:not(h2) a {
-    color: #097380;
-}
-article h2:nth-of-type(4) ~ *:not(h2) a {
-    color: #563d7c;
-}
-
+article h2:nth-of-type(1),
+article h2:nth-of-type(1) ~ *:not(h2) a,
 article h2:nth-of-type(1) ~ blockquote {
-    color: #ea5930;
-    border-color: #ea5930;
+  color: #ea5930;
+}
+article h2:nth-of-type(1) ~ blockquote {
+  border-color: #ea5930;
+}
+article h2:nth-of-type(2),
+article h2:nth-of-type(2) ~ *:not(h2) a,
+article h2:nth-of-type(2) ~ blockquote {
+  color: #f8af1e;
 }
 article h2:nth-of-type(2) ~ blockquote {
-    color: #f8af1e;
-    border-color: #f8af1e;
+  border-color: #f8af1e;
+}
+article h2:nth-of-type(3),
+article h2:nth-of-type(3) ~ *:not(h2) a,
+article h2:nth-of-type(3) ~ blockquote {
+  color: #097380;
 }
 article h2:nth-of-type(3) ~ blockquote {
-    border-color: #097380;
-    color: #097380;
+  border-color: #097380;
+}
+article h2:nth-of-type(4),
+article h2:nth-of-type(4) ~ *:not(h2) a,
+article h2:nth-of-type(4) ~ blockquote {
+  color: #563d7c;
 }
 article h2:nth-of-type(4) ~ blockquote {
-    border-color: #372560;
-    color: #563d7c;
+  border-color: #563d7c;
 }
 article a {
-    text-decoration: underline;
+  font-weight: 500;
 }
 .clearfix:before,
 .clearfix:after {

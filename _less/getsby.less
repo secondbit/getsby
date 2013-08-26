@@ -19,7 +19,7 @@
   }
 
   h1 {
-  	color: #563d7c;
+  	color: @purple;
   }
 
   .wordmark a {
@@ -41,19 +41,39 @@
   .container {
   	position: relative;
   }
+
+  .intro a {
+  	color: @purple;
+	text-decoration: underline;
+  }
 }
 
 article {
-	h2:nth-of-type(1) {
+	h2:nth-of-type(1), h2:nth-of-type(1) ~ *:not(h2) a, h2:nth-of-type(1) ~ blockquote {
 		color: @orange;
 	}
-	h2:nth-of-type(2) {
+	h2:nth-of-type(1) ~ blockquote {
+		border-color: @orange;
+	}
+	h2:nth-of-type(2), h2:nth-of-type(2) ~ *:not(h2) a, h2:nth-of-type(2) ~ blockquote {
 		color: @yellow;
 	}
-	h2:nth-of-type(3) {
+	h2:nth-of-type(2) ~ blockquote {
+		border-color: @yellow;
+	}
+	h2:nth-of-type(3), h2:nth-of-type(3) ~ *:not(h2) a, h2:nth-of-type(3) ~ blockquote {
 		color: @blue;
 	}
-	h2:nth-of-type(4) {
+	h2:nth-of-type(3) ~ blockquote {
+		border-color: @blue;
+	}
+	h2:nth-of-type(4), h2:nth-of-type(4) ~ *:not(h2) a, h2:nth-of-type(4) ~ blockquote {
 		color: @purple;
+	}
+	h2:nth-of-type(4) ~ blockquote {
+		border-color: @purple;
+	}
+	a {
+		font-weight: 500;
 	}
 }
