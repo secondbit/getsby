@@ -10,15 +10,17 @@
     <!-- Docs page layout -->
     <div class="bs-header" id="content">
       <div class="container">
-        <img src="/img/people/{{ page.image }}" />
-        <h1>{{ page.name }} <span class="wordmark"><a href="">&middot; gets by</a></span></h1>
-				<div class="intro">{{ page.intro | markdownify }}</div>
+        <div class="col-md-8 col-md-offset-2">
+          <img src="/img/people/{{ page.image }}" />
+          <h1>{{ page.name }} <span class="wordmark"><a href="">&middot; gets by</a></span></h1>
+				  <div class="intro">{{ page.intro | markdownify }}</div>
+        </div>
       </div>
     </div>
 
     <div class="container bs-docs-container">
       <div class="row">
-        <article class="col-md-9" role="main">
+        <article class="col-md-8 col-md-offset-2" role="main">
           {{ content }}
         </article>
       </div>
