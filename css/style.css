@@ -3156,6 +3156,24 @@ article h2:nth-of-type(4) ~ blockquote {
 article a {
   font-weight: 500;
 }
+.interview_list {
+  list-style: none;
+  padding-left: 0px !important;
+}
+.interview_list div {
+  height: 150px;
+}
+.interview_list div:hover {
+  background-color: #eeeeee;
+}
+.interview_list img {
+  height: 100%;
+  float: left;
+  margin-right: 15px;
+}
+.interview_list a:hover {
+  text-decoration: none;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";

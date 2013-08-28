@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<title>Gets By</title>
     {% include header.html %}
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-home">
-    <a class="sr-only" href="#content">Skip navigation</a>
+  <body>
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <img src="/img/people/{{ page.image }}" />
+          <h1><span class="wordmark"><a href="">&middot; gets by</a></span></h1>
+				  <div class="intro"></div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Docs master nav -->
-    {% include nav-main.html %}
+    <div class="container">
+      <div class="row">
+        <article class="col-md-8 col-md-offset-2" role="main">
+          <ul class="interview_list">
+            {% for interview in site.posts %}
+              <li>
+                <div class="interview">
+                  <a href="{{ interview.url }}">
+                    <img src="/img/people/{{ interview.image }}" />
+                    <h2 class="name">{{ interview.name }}</h2>
+                  </a>
+                    <h4 class="intro">{{ interview.intro | markdownify }}</h4>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </article>
+      </div>
 
-    <!-- Page content of course! -->
-    {{ content }}
-
-    <!-- Callout for the old docs link -->
-    {% include old-bs-docs.html %}
-
-    <footer class="container" role="contentinfo">
-      {% include social-buttons.html %}
-
-      <ul class="bs-masthead-links">
-        <li>
-          <a href="{{ site.repo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
-        </li>
-        <li>
-          <a href="{{ site.examples }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
-        </li>
-        <li>
-          <a href="{{ site.glyphicons }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Glyphicons']);">Glyphicons</a>
-        </li>
-        <li>
-          <a href="{{ site.expo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
-        </li>
-      </ul>
-    </footer>
-
-    <!-- JS and analytics only. -->
-    {% include footer.html %}
+    </div>
 
   </body>
 </html>
