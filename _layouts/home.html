@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<title>Gets By</title>
+    {% include header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <img src="/img/people/{{ page.image }}" />
+          <h1><span class="wordmark"><a href="">&middot; gets by</a></span></h1>
+				  <div class="intro"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <article class="col-md-8 col-md-offset-2" role="main">
+          <ul class="interview_list">
+            {% for interview in site.posts %}
+              <li>
+                <div class="interview">
+                  <a href="{{ interview.url }}">
+                    <img src="/img/people/{{ interview.image }}" />
+                    <h2 class="name">{{ interview.name }}</h2>
+                  </a>
+                    <h4 class="intro">{{ interview.intro | markdownify }}</h4>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </article>
+      </div>
+
+    </div>
+
+  </body>
+</html>
