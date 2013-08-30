@@ -25,7 +25,7 @@
             {% for interview in site.posts %}
               <li>
                 <div class="interview">
-                  <a href="{{ interview.url }}">
+                  <a href="http://{{ interview.id | split:"/" | last}}.getsby.co">
                     <img src="/img/people/{{ interview.image }}" />
                     <h2 class="name">{{ interview.name }}</h2>
                   </a>
