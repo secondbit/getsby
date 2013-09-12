@@ -3235,16 +3235,20 @@ article a {
     display: block;
   }
 }
-.interviews .interview:nth-of-type(1) .name {
+.interviews .interview:nth-of-type(1) .name,
+.interviews .interview:nth-of-type(1) a {
   color: #ea5930;
 }
-.interviews .interview:nth-of-type(2) .name {
+.interviews .interview:nth-of-type(2) .name,
+.interviews .interview:nth-of-type(2) a {
   color: #f8af1e;
 }
-.interviews .interview:nth-of-type(3) .name {
+.interviews .interview:nth-of-type(3) .name,
+.interviews .interview:nth-of-type(3) a {
   color: #097380;
 }
-.interviews .interview:nth-of-type(4) .name {
+.interviews .interview:nth-of-type(4) .name,
+.interviews .interview:nth-of-type(4) a {
   color: #563d7c;
 }
 .clearfix:before,
