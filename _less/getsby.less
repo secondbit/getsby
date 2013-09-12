@@ -82,21 +82,121 @@ article {
   list-style: none;
   padding-left: 0px !important;
 
-  div {
-    height: 150px;
+  li {
+    &:nth-of-type(1) {
+      a {
+        color: @orange;
+      }
+    }
 
-    &:hover {
-      background-color: @gray-lighter;
+    &:nth-of-type(2) {
+      a {
+        color: @yellow;
+      }
+    }
+
+    &:nth-of-type(3) {
+      a {
+        color: @blue;
+      }
+    }
+
+    &:nth-of-type(4) {
+      a {
+        color: @purple;
+      }
     }
   }
 
+  div {
+    min-height: 100px;
+    margin-top: 15px;
+  }
+
   img {
-    height: 100%;
-    float: left;
+    height: 100px;
+    vertical-align: middle;
     margin-right: 15px;
+    border-radius: 5px;
   }
 
   a:hover {
     text-decoration: none;
+  }
+
+  .name {
+    font-size: 2em;
+  }
+}
+
+.interviews {
+  .interview {
+    padding: 30px 30px 40px;
+    color: #5a5a5a;
+    border-bottom: 1px solid #e5e5e5;
+
+    .intro {
+      @media (max-width: 770px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 770px) {
+      text-align: center;
+    }
+
+    h1 {
+      color: @purple;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    img {
+      @media (min-width: 770px) {
+        float: left;
+      }
+      margin-right: 15px;
+      border-radius: 5px;
+      width: 150px;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 600;
+      @media (max-width: 770px) {
+        display: block;
+      }
+    }
+
+    &:nth-of-type(1) {
+      .name {
+        color: @orange;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .name {
+        color: @yellow;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .name {
+        color: @blue;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .name {
+        color: @purple;
+      }
+    }
   }
 }
