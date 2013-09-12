@@ -3,40 +3,35 @@
 	<head>
 		<!-- Meta, title, CSS, favicons, etc. -->
 		<title>Gets By</title>
-    {% include header.html %}
-    <!-- Place anything custom after this. -->
-  </head>
-  <body>
-    <!-- Docs page layout -->
-    <div class="bs-header" id="content">
-      <div class="container">
-        <div class="col-md-8 col-md-offset-2">
-          <img src="http://placehold.it/150x150" />
-          <h1><span class="wordmark"><a href="/">gets by</a></span></h1>
-				  <div class="intro"><span class="wordmark">gets by</span> is a collection of thoughts on mental illness in the tech community.</div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <article class="col-md-8 col-md-offset-2" role="main">
-          <ul class="interview_list">
-            {% for interview in site.posts %}
-              <li>
-                <div class="interview">
-                  <a href="http://{{ interview.id | split:"/" | last}}.getsby.co">
-                    <img src="/img/people/{{ interview.image }}" />
-                    <h2 class="name">{{ interview.name }}</h2>
-                  </a>
-                    <h4 class="intro">{{ interview.intro | markdownify }}</h4>
-                </div>
-              </li>
-            {% endfor %}
-          </ul>
-        </article>
-      </div>
-    </div>
-    
+		{% include header.html %}
+		<!-- Place anything custom after this. -->
+	</head>
+	<body>
+		<!-- Docs page layout -->
+		<div class="bs-header" id="content">
+			<div class="container">
+				<div class="col-md-8 col-md-offset-2">
+					<img src="http://placehold.it/150x150" />
+					<h1><span class="wordmark"><a href="http://getsby.co">gets by</a></span></h1>
+					<div class="intro"><span class="wordmark">gets by</span> is a collection of thoughts on mental illness in the tech community.</div>
+				</div>
+			</div>
+		</div>
+		<div class="interviews">
+			{% for interview in site.posts %}
+			<div class="interview">
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+						<a href="http://{{ interview.id | split:"/" | last}}.getsby.co">
+							<img src="/img/people/{{ interview.image }}" />
+							<h1 class="name">{{ interview.name }}</h1>
+						</a>
+						<span class="intro">{{ interview.intro | markdownify }}</span>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
 
-  </body>
+	</body>
 </html>
