@@ -3124,36 +3124,36 @@ input[type="button"].btn-block {
   color: #563d7c;
   text-decoration: underline;
 }
-article h2:nth-of-type(1),
-article h2:nth-of-type(1) ~ *:not(h2) a,
-article h2:nth-of-type(1) ~ blockquote {
+article h2:nth-of-type(4n+1),
+article h2:nth-of-type(4n+1) ~ *:not(h2) a,
+article h2:nth-of-type(4n+1) ~ blockquote {
   color: #ea5930;
 }
-article h2:nth-of-type(1) ~ blockquote {
+article h2:nth-of-type(4n+1) ~ blockquote {
   border-color: #ea5930;
 }
-article h2:nth-of-type(2),
-article h2:nth-of-type(2) ~ *:not(h2) a,
-article h2:nth-of-type(2) ~ blockquote {
+article h2:nth-of-type(4n+2),
+article h2:nth-of-type(4n+2) ~ *:not(h2) a,
+article h2:nth-of-type(4n+2) ~ blockquote {
   color: #f8af1e;
 }
-article h2:nth-of-type(2) ~ blockquote {
+article h2:nth-of-type(4n+2) ~ blockquote {
   border-color: #f8af1e;
 }
-article h2:nth-of-type(3),
-article h2:nth-of-type(3) ~ *:not(h2) a,
-article h2:nth-of-type(3) ~ blockquote {
+article h2:nth-of-type(4n+3),
+article h2:nth-of-type(4n+3) ~ *:not(h2) a,
+article h2:nth-of-type(4n+3) ~ blockquote {
   color: #097380;
 }
-article h2:nth-of-type(3) ~ blockquote {
+article h2:nth-of-type(4n+3) ~ blockquote {
   border-color: #097380;
 }
-article h2:nth-of-type(4),
-article h2:nth-of-type(4) ~ *:not(h2) a,
-article h2:nth-of-type(4) ~ blockquote {
+article h2:nth-of-type(4n+4),
+article h2:nth-of-type(4n+4) ~ *:not(h2) a,
+article h2:nth-of-type(4n+4) ~ blockquote {
   color: #563d7c;
 }
-article h2:nth-of-type(4) ~ blockquote {
+article h2:nth-of-type(4n+4) ~ blockquote {
   border-color: #563d7c;
 }
 article a {
@@ -3163,16 +3163,16 @@ article a {
   list-style: none;
   padding-left: 0px !important;
 }
-.interview_list li:nth-of-type(1) a {
+.interview_list li:nth-of-type(4n+1) a {
   color: #ea5930;
 }
-.interview_list li:nth-of-type(2) a {
+.interview_list li:nth-of-type(4n+2) a {
   color: #f8af1e;
 }
-.interview_list li:nth-of-type(3) a {
+.interview_list li:nth-of-type(4n+3) a {
   color: #097380;
 }
-.interview_list li:nth-of-type(4) a {
+.interview_list li:nth-of-type(4n+4) a {
   color: #563d7c;
 }
 .interview_list div {
@@ -3235,20 +3235,20 @@ article a {
     display: block;
   }
 }
-.interviews .interview:nth-of-type(1) .name,
-.interviews .interview:nth-of-type(1) a {
+.interviews .interview:nth-of-type(4n+1) .name,
+.interviews .interview:nth-of-type(4n+1) a {
   color: #ea5930;
 }
-.interviews .interview:nth-of-type(2) .name,
-.interviews .interview:nth-of-type(2) a {
+.interviews .interview:nth-of-type(4n+2) .name,
+.interviews .interview:nth-of-type(4n+2) a {
   color: #f8af1e;
 }
-.interviews .interview:nth-of-type(3) .name,
-.interviews .interview:nth-of-type(3) a {
+.interviews .interview:nth-of-type(4n+3) .name,
+.interviews .interview:nth-of-type(4n+3) a {
   color: #097380;
 }
-.interviews .interview:nth-of-type(4) .name,
-.interviews .interview:nth-of-type(4) a {
+.interviews .interview:nth-of-type(4n+4) .name,
+.interviews .interview:nth-of-type(4n+4) a {
   color: #563d7c;
 }
 .clearfix:before,

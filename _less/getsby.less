@@ -53,28 +53,28 @@
 }
 
 article {
-	h2:nth-of-type(1), h2:nth-of-type(1) ~ *:not(h2) a, h2:nth-of-type(1) ~ blockquote {
+	h2:nth-of-type(4n+1), h2:nth-of-type(4n+1) ~ *:not(h2) a, h2:nth-of-type(4n+1) ~ blockquote {
 		color: @orange;
 	}
-	h2:nth-of-type(1) ~ blockquote {
+	h2:nth-of-type(4n+1) ~ blockquote {
 		border-color: @orange;
 	}
-	h2:nth-of-type(2), h2:nth-of-type(2) ~ *:not(h2) a, h2:nth-of-type(2) ~ blockquote {
+	h2:nth-of-type(4n+2), h2:nth-of-type(4n+2) ~ *:not(h2) a, h2:nth-of-type(4n+2) ~ blockquote {
 		color: @yellow;
 	}
-	h2:nth-of-type(2) ~ blockquote {
+	h2:nth-of-type(4n+2) ~ blockquote {
 		border-color: @yellow;
 	}
-	h2:nth-of-type(3), h2:nth-of-type(3) ~ *:not(h2) a, h2:nth-of-type(3) ~ blockquote {
+	h2:nth-of-type(4n+3), h2:nth-of-type(4n+3) ~ *:not(h2) a, h2:nth-of-type(4n+3) ~ blockquote {
 		color: @blue;
 	}
-	h2:nth-of-type(3) ~ blockquote {
+	h2:nth-of-type(4n+3) ~ blockquote {
 		border-color: @blue;
 	}
-	h2:nth-of-type(4), h2:nth-of-type(4) ~ *:not(h2) a, h2:nth-of-type(4) ~ blockquote {
+	h2:nth-of-type(4n+4), h2:nth-of-type(4n+4) ~ *:not(h2) a, h2:nth-of-type(4n+4) ~ blockquote {
 		color: @purple;
 	}
-	h2:nth-of-type(4) ~ blockquote {
+	h2:nth-of-type(4n+4) ~ blockquote {
 		border-color: @purple;
 	}
 	a {
@@ -87,25 +87,25 @@ article {
   padding-left: 0px !important;
 
   li {
-    &:nth-of-type(1) {
+    &:nth-of-type(4n+1) {
       a {
         color: @orange;
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(4n+2) {
       a {
         color: @yellow;
       }
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(4n+3) {
       a {
         color: @blue;
       }
     }
 
-    &:nth-of-type(4) {
+    &:nth-of-type(4n+4) {
       a {
         color: @purple;
       }
@@ -179,25 +179,25 @@ article {
       }
     }
 
-    &:nth-of-type(1) {
+    &:nth-of-type(4n+1) {
       .name, a {
         color: @orange;
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(4n+2) {
       .name, a {
         color: @yellow;
       }
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(4n+3) {
       .name, a {
         color: @blue;
       }
     }
 
-    &:nth-of-type(4) {
+    &:nth-of-type(4n+4) {
       .name, a {
         color: @purple;
       }
