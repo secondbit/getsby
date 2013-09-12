@@ -22,15 +22,19 @@
   	color: @purple;
   }
 
-  .wordmark a {
+  .wordmark {
   	font-style: italic;
-  	font-family: serif;
+  	font-family: @font-family-serif;
   	color: @gray-light;
 
-  	&:hover {
-  		text-decoration: none;
-  		color: @gray;
-  	}
+  	a {
+      color: @gray-light;
+
+      &:hover {
+        text-decoration: none;
+       color: @gray;
+      }
+    }
   }
 
   p {
