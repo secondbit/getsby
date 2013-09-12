@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<title>Gets By</title>
     {% include header.html %}
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-home">
-    <a class="sr-only" href="#content">Skip navigation</a>
-
-    <!-- Docs master nav -->
-    {% include nav-main.html %}
-
-    <!-- Page content of course! -->
-    {{ content }}
-
-    <!-- Callout for the old docs link -->
-    {% include old-bs-docs.html %}
-
-    <footer class="container" role="contentinfo">
-      {% include social-buttons.html %}
-
-      <ul class="bs-masthead-links">
-        <li>
-          <a href="{{ site.repo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
-        </li>
-        <li>
-          <a href="{{ site.examples }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
-        </li>
-        <li>
-          <a href="{{ site.glyphicons }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Glyphicons']);">Glyphicons</a>
-        </li>
-        <li>
-          <a href="{{ site.expo }}" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
-        </li>
-      </ul>
-    </footer>
-
-    <!-- JS and analytics only. -->
-    {% include footer.html %}
+  <body>
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <img src="http://placehold.it/150x150" />
+          <h1><span class="wordmark"><a href="/">gets by</a></span></h1>
+				  <div class="intro"><span class="wordmark">gets by</span> is a collection of thoughts on mental illness in the tech community.</div>
+        </div>
+      </div>
+    </div>
+    <div class="interviews">
+      {% for interview in site.posts %}
+          <div class="interview">
+            <div class="container">
+              <div class="col-md-8 col-md-offset-2">
+                <img src="/img/people/{{ interview.image }}" />
+                <h1 class="name">{{ interview.name }}</h1>
+                <span class="intro">{{ interview.intro | markdownify }}</span>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+    </div>
+    
 
   </body>
 </html>
