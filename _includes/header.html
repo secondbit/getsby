@@ -26,3 +26,4 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://{% if page.id %}{{ page.id | split:"/" | last }}.{% endif %}getsby.co" />
 <meta property="og:image" content="http://getsby.co/img/{% if page.image %}people/{{ page.image }}{% else %}logo.png{% endif %}" />
+<meta property="og:description" content="{% if page.intro %}{{ page.intro | markdownify }}{% else %}gets by is a collection of stories about living with a mental illness, as told by the tech community.{% endif %}">
