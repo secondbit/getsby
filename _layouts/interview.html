@@ -24,7 +24,6 @@
         </article>
 			</div>
 			<div class="row">
-			{% if page.twitter or page.adn or page.facebook or page.googleplus %}
 				<footer class="col-md-8 col-md-offset-2">
 				{% if page.twitter or page.adn or page.facebook or page.googleplus %}
 				<p>None of this stuff is easy to talk about. It took a lot of courage for {{ page.name }} to be able to share it with you. You should tell them how awesome they are on
@@ -49,7 +48,6 @@
 				</footer>
 			</div>
 		</div>
-		{% endif %}
 		{% include footer.html %}
   </body>
 </html>
