@@ -3101,18 +3101,6 @@ input[type="button"].btn-block {
 .bs-header h1 {
   color: #563d7c;
 }
-.bs-header .wordmark {
-  font-style: italic;
-  font-family: 'PT Serif', Georgia, "Times New Roman", Times, serif;
-  color: #999999;
-}
-.bs-header .wordmark a {
-  color: #999999;
-}
-.bs-header .wordmark a:hover {
-  text-decoration: none;
-  color: #555555;
-}
 .bs-header p {
   font-weight: 300;
   line-height: 1.5;
@@ -3123,6 +3111,18 @@ input[type="button"].btn-block {
 .bs-header .intro a {
   color: #563d7c;
   text-decoration: underline;
+}
+.wordmark {
+  font-style: italic;
+  font-family: 'PT Serif', Georgia, "Times New Roman", Times, serif;
+  color: #999999;
+}
+.wordmark a {
+  color: #999999;
+}
+.wordmark a:hover {
+  text-decoration: none;
+  color: #555555;
 }
 article h2:nth-of-type(4n+1),
 article h2:nth-of-type(4n+1) ~ *:not(h2) a,
@@ -3250,6 +3250,17 @@ article a {
 .interviews .interview:nth-of-type(4n+4) .name,
 .interviews .interview:nth-of-type(4n+4) a {
   color: #563d7c;
+}
+footer {
+  border-top: 1px solid;
+  padding-top: 15px;
+  font-size: 16px;
+}
+footer .attribution {
+  color: #999999;
+}
+footer .hashtag {
+  color: #ea5930;
 }
 .clearfix:before,
 .clearfix:after {

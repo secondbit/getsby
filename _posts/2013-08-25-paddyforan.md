@@ -2,6 +2,7 @@
 layout: interview
 name: Paddy Foran
 image: paddyforan.jpg
+twitter: paddyforan
 intro: "I&rsquo;m a software developer living in Buffalo, NY. I&rsquo;m 23 years old. I [write](http://paddy.io/posts), I [talk](http://paddy.io/talks), and I [make things](https://github.com/paddyforan)."
 ---
 

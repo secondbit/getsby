@@ -22,21 +22,6 @@
   	color: @purple;
   }
 
-  .wordmark {
-  	font-style: italic;
-  	font-family: @font-family-serif;
-  	color: @gray-light;
-
-  	a {
-      color: @gray-light;
-
-      &:hover {
-        text-decoration: none;
-       color: @gray;
-      }
-    }
-  }
-
   p {
   	font-weight: 300;
   	line-height: 1.5;
@@ -49,6 +34,21 @@
   .intro a {
   	color: @purple;
 	text-decoration: underline;
+  }
+}
+
+.wordmark {
+  font-style: italic;
+  font-family: @font-family-serif;
+  color: @gray-light;
+
+  a {
+    color: @gray-light;
+
+    &:hover {
+      text-decoration: none;
+     color: @gray;
+    }
   }
 }
 
@@ -203,4 +203,18 @@ article {
       }
     }
   }
+}
+
+footer {
+  border-top: 1px solid;
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+footer .attribution {
+  color: @gray-light;
+}
+
+footer .hashtag {
+  color: @orange;
 }
