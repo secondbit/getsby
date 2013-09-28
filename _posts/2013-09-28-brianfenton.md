@@ -2,6 +2,7 @@
 layout: interview
 name: Brian Fenton
 image: brianfenton.png
+twitter: brianfenton
 intro: "My name is Brian Fenton, and I&rsquo;m a software engineer. Fairly standard geeky hobbies&hellip; programming, bit of a foodie, craft beer, games, fatherhood. I occasionally [blog](http://www.brianfenton.us) and I&rsquo;m frequently on [Twitter](https://www.twitter.com/brianfenton)."
 ---
 
