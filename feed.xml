@@ -14,7 +14,7 @@
                         <link>http://{{ post.id | split:"/" | last }}.getsby.co</link>
                         <pubDate>{{ post.date }}</pubDate>
                         <guid isPermaLink="true">http://{{ post.id | split:"/" | last }}.getsby.co</guid>
-                        <description><![CDATA[{% if post.intro %}{{ post.intro | markdownify }}{% else %}{{ post.content | strip_html | truncatewords: 100 }}{% endif %}]]></description>
+                        <description><![CDATA[{% if post.intro %}{{ post.intro | markdownify | strip_html }}{% else %}{{ post.content | strip_html | truncatewords: 100 }}{% endif %}]]></description>
                         <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
                 </item>{% endfor %}
         </channel>
