@@ -13,24 +13,12 @@
 				<div class="col-md-8 col-md-offset-2">
 					<img src="/img/logo.png" />
 					<h1><span class="wordmark"><a href="http://getsby.co">gets&nbsp;by</a></span></h1>
-					<div class="intro"><span class="wordmark">gets by</span> is a collection of thoughts on mental illness in the tech community.</div>
+					<div class="intro"><span class="wordmark">gets by</span> is a collection of stories about living with a mental illness, as told by the tech community.{% if page.url != "/about/index.html" %} <a href="http://getsby.co/about" title="About Gets By">Find out more.</a>{% endif %}</div>
 				</div>
 			</div>
 		</div>
 		<div class="interviews">
-			{% for interview in site.posts %}
-			<div class="interview">
-				<div class="container">
-					<div class="col-md-8 col-md-offset-2">
-						<a href="http://{{ interview.id | split:"/" | last}}.getsby.co">
-							<img src="/img/people/{{ interview.image }}" />
-							<h1 class="name">{{ interview.name }}</h1>
-						</a>
-						<span class="intro">{{ interview.intro | markdownify }}</span>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
+			{{ content }}
 		</div>
 
 	</body>

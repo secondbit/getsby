@@ -1,3 +1,17 @@
 ---
 layout: home
 ---
+{% for interview in site.posts %}
+			<div class="interview">
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+						<a href="http://{{ interview.id | split:"/" | last}}.getsby.co">
+							<img src="/img/people/{{ interview.image }}" />
+							<h1 class="name">{{ interview.name }}</h1>
+						</a>
+						<span class="intro">{{ interview.intro | markdownify }}</span>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
