@@ -18,7 +18,7 @@ I haven&rsquo;t had health insurance in over 4 years, so haven&rsquo;t been able
 
 On an every day level, the largest way it impacts me is sleep. I have anxiety-induced insomnia: the anxiety makes me worry about nothing&mdash;or everything&mdash;and the adrenaline keeps me from falling asleep. Since those chemicals are in my brain when I&rsquo;m trying to fall asleep, I also suffer from nightmares, so those wake me frequently. On top of that, I&rsquo;ve become a very light sleeper because of the PTSD. When I got a fitbit I was completely unsurprised to find that I wake up 10&ndash;20 times a night.
 
-> When I got a fitbit I was completely unsurprised to find that I wake up 10&ndash;20 times a night.
+> &ldquo;When I got a fitbit I was completely unsurprised to find that I wake up 10&ndash;20 times a night.&rdquo;
 
 Side-effects of being unable to get solid sleep include being more prone to sickness or feeling unwell&mdash;migraines, IBS flareups, flu-like symptoms, etc.
 
