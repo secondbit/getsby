@@ -3,7 +3,7 @@ layout: interview
 name: Ashe Dryden
 image: ashedryden.jpg
 twitter: ashedryden
-intro: "I&rsquo;m a independent programmer living in Madison, WI who currently favors the Ruby community. Over the past year I have spent the majority of my time educating people about the lack of diversity in tech, why it&rsquo;s a problem for everyone, and what we can do about it. I&rsquo;m currently [writing a book](http://leanpub.com/the-diverse-team) for businesses who want to increase diversity as well as traveling the world talking to people about diversity and inclusion. I&rsquo;ve been lucky that the [community has supported me in my efforts](http://www.indiegogo.com/projects/programming-diversity/x/3986040) and we&rsquo;re hoping to do even more than we have been doing. I regularly [blog](http://ashedryden.com/) and [tweet](http://twitter.com/ashedryden) more than is healthy."
+intro: "I&rsquo;m a independent programmer living in Madison, WI who currently favors the Ruby community. Over the past year I have spent the majority of my time educating people about the lack of diversity in tech, why it&rsquo;s a problem for everyone, and what we can do about it. I&rsquo;m currently [writing a book](http://leanpub.com/the-diverse-team) for businesses who want to increase diversity as well as traveling the world talking to people about diversity and inclusion. I&rsquo;ve been lucky that the [community has supported me in my efforts](http://ashedryden.com/thanks.html) and we&rsquo;re hoping to do even more than we have been doing. I regularly [blog](http://ashedryden.com/) and [tweet](http://twitter.com/ashedryden) more than is healthy."
 ---
 
 ## Diagnosis
