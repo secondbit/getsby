@@ -10,4 +10,9 @@
 	 var s = document.getElementsByTagName('script')[0];
 	 s.parentNode.insertBefore(t, s);
 	 })();
+
+var subscribeLink = document.getElementById("subscribe-link");
+if(subscribeLink) {
+	subscribeLink.onclick=function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z); return false};
+}
 </script>
