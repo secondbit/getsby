@@ -55,7 +55,7 @@ To begin, a willingness to expose myself to risk was necessary. Risk and perceiv
 
 > &ldquo;A willingness to expose myself to risk was necessary.&rdquo;
 
-I needed to meet myself where I was, not where I wanted to be, or where my peers were. I was fortunate to have access to a wonderful psychologist who introduced me to this. My frame of reference for what success is and what failure is has to take account of what is difficult for me _today_, not what others would intuitively assume is difficult, or what I eventually want to find difficult. If going for a 10-minute walk around the neighborhood is a success for today, then it _is_ a success. It really helps if you have someone else supportive with this pragmatic mindset to meet with regularly: they can spot successes and that helps you realise the progress you are making.
+I needed to meet myself where I was, not where I wanted to be, or where my peers were. I was fortunate to have access to a wonderful psychologist who introduced me to this. My frame of reference for what success is and what failure is has to take account of what is difficult for me _today_, not what others would intuitively assume is difficult, or what I eventually want to find difficult. If going for a 10-minute walk around the neighborhood is a success for today, then it _is_ a success. It really helps if you have someone else supportive with this pragmatic mindset to meet with regularly: they can spot successes and that helps you realize the progress you are making.
 
 > &ldquo;If going for a 10-minute walk around the neighborhood is a success for today, then it _is_ a success.&rdquo;
 
