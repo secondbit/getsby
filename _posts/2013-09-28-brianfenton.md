@@ -24,7 +24,7 @@ Before I started the medication I had a number of issues&hellip; day to day I wa
 
 > &ldquo;In a weird way I feel like I have impostor syndrome about my mental illness&rdquo;
 
-After the medication kicked in those issues largely went away. I still sometimes get overwhelmed in times of high stress, but that only happens a few times a year now and I can usually just sleep it off and be alright the next morning. In a weird way I feel like I have impostor syndrome about my mental illness, because it&rsquo;s not as severe or acute as those of other people that I know, so I sometimes worry that I&rsquo;ll be judged less for &ldquo;whining&rdquo; or using it as a crutch than I would be by just keeping quiet about it. I&rsquo;m not ashamed of having it, more of a question of whether it&rsquo;s worth bringing it to peoples&rsquo; attention and triggering whatever expectations that may carry.
+After the medication kicked in those issues largely went away. I still sometimes get overwhelmed in times of high stress, but that only happens a few times a year now and I can usually just sleep it off and be alright the next morning. In a weird way I feel like I have impostor syndrome about my mental illness, because it&rsquo;s not as severe or acute as those of other people that I know, so I sometimes worry that I&rsquo;ll be judged less for &ldquo;whining&rdquo; or using it as a crutch than I would be by just keeping quiet about it. I&rsquo;m not ashamed of having it, more of a question of whether it&rsquo;s worth bringing it to people&rsquo;s attention and triggering whatever expectations that may carry.
 
 ## Strategies
 
