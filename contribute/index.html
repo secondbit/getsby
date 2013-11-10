@@ -1,0 +1,47 @@
+---
+layout: home
+---
+			<div class="interview">
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+						<h2>Contributing to <span class="wordmark">gets by</span></h2>
+						<p>Contributing to <span class="wordmark">gets by</span> is an intensely personal decision, and something we want to make as easy and comfortable as we can for our interviewees. Mental illness is a very personal issue, and we want our interviewees to feel safe to share that. To that end, we will update or remove any interview at any time if the interviewee requests it. We will do whatever we can to respect their wishes, though some parts of the internet (caches, RSS readers, etc.) fall outside our reach. Anything we can do, we will; these are not our stories, and they&rsquo;re not ours to make decisions about. We provide a platform to share <em>your</em> story; that&rsquo;s all.</p>
+						<h2 id="email">For Non-Coders</h2>
+						<p>If you&rsquo;re not comfortable with Github, editing markdown files, and Ruby gems, that&rsquo;s totally fine. Just send an email to paddy@secondbit.org containing the following information. Feel free to omit anything you aren&rsquo;t comfortable sharing.</p>
+						<ul>
+							<li>Your name: how you want this attributed to you. If you want to be anonymous, just say so.</li>
+							<li>A picture of you: this should be something that you identify with. If you want to be anonymous, pick an image and we&rsquo;ll use that, instead.</li>
+							<li>A brief (one or two line) bio: this will be used under your name to give context on who you are. Feel free to include links!</li>
+							<li>If you use social media (Twitter/Google+/App.net/Facebook) and would like your account linked to this interview, let us know which service it&rsquo;s on and what your username (Twitter/App.net/Facebook) or account ID (Google+) is, and we&rsquo;ll link it.</li>
+						</ul>
+						<p>You should also include the content of your interview. Interviews are supposed to be narrative in format, and it works better if there are multiple paragraphs. Feel free to include as much or as little information as you&rsquo;d like.</p>
+						<ul>
+							<li>Diagnosis: what do you deal with? How were you diagnosed? What prompted you to get tested for it? If you self-diagnosed, that&rsquo;s fine; we&rsquo;re not here to judge who &ldquo;realy&rdquo; has an illness. If you think you qualify, you do.</li>
+							<li>Medication: what do you take? Does it help you? What are the side-effects? What stories do you have about it? How do you feel about it?</li>
+							<li>Challenges: how does your illness make your life harder? What stories do you have? What do you struggle with?</li>
+							<li>Strategies: how do you work through the challenges? What are some of the tricks you&rsquo;ve learned to manage things?</li>
+						</ul>
+						<p>Email all that to paddy@secondbit.org, and we&rsquo;ll get it converted into a file we can post. When that&rsquo;s done, we&rsquo;ll email you back a screenshot of what your post will look like on the site, for you to approve or request modificaitons to. We&rsquo;ll modify things until you&rsquo;re happy with them, and when you give the final go-ahead, then we&rsquo;ll post your interview.</p>
+						<h2 id="pull-request">For Coders</h2>
+						<p>If you know how to publish to Github pages and are comfortable with your interview being seen before the official publication, you can send us a <a href="https://github.com/secondbit/getsby">pull request</a> with your file. Just fork the repo, create a new branch named for the shortlink you want (whatever comes before .getsby.co in your desired URL), and write your interview in the _posts folder. The naming convention is simple: YYYY-MM-DD-id.md. The YYYY is the year the post is written, the MM is the month the post is written, and the DD is the day the post is written. id is the ID for the post, which is what comes before getsby.co in the URL. The posts are written in Markdown, and the format is simple: each section is preceeded by the section name as an h2 (## in markdown). If you put a &gt; before a pargraph, it&rsquo;s treated as a pull quote&mdash;you can see some in action on <a href="http://paddyforan.getsby.co">http://paddyforan.getsby.co</a>. Also, save the image you want to use in img/people named after your ID. For example, /img/people/paddyforan.jpg. Finally, include the following metadata in the YAML header&mdash;feel free to omit anything you aren&rsquo;t comfortable sharing.</p>
+						<ul>
+							<li>layout: this should always be interview.</li>
+							<li>name: how you want this attributed to you. If you want to be anonymous, just write anonymous, though know your Github username will be attached.</li>
+							<li>image: the filename of your image, without the path. For example, paddyforan.jpg.</li>
+							<li>intro: a brief (one or two line) bio that will be used under your name to give context on who you are. This is parsed as Markdown, so feel free to include links.</li>
+							<li>twitter: your Twitter username, if you want this linked to your Twitter account. Note that only one social media account should be specified.</li>
+							<li>adn: your App.net username, if you want this linked to your App.net account. Note that only one social media account should be specified.</li>
+							<li>googleplus: your Google+ user ID number, if you want this linked to your Google+ account. Note that only one social media account should be specified.</li>
+							<li>facebook: your Facebook username, if you want this linked to your Facebook account. Note that only one social media account should be specified.</li>
+						</ul>
+						<p>The body of the post is just the content of your interview, as Markdown. Interviews are supposed to be narrative in format, and it works better if there are multiple paragraphs. Feel free to include as much or as little information as you&rsquo;d like.</p>
+						<ul>
+							<li>Diagnosis: what do you deal with? How were you diagnosed? What prompted you to get tested for it? If you self-diagnosed, that&rsquo;s fine; we&rsquo;re not here to judge who &ldquo;realy&rdquo; has an illness. If you think you qualify, you do.</li>
+							<li>Medication: what do you take? Does it help you? What are the side-effects? What stories do you have about it? How do you feel about it?</li>
+							<li>Challenges: how does your illness make your life harder? What stories do you have? What do you struggle with?</li>
+							<li>Strategies: how do you work through the challenges? What are some of the tricks you&rsquo;ve learned to manage things?</li>
+						</ul>
+						<p>You can run `jekyll serve` to preview your interview (note that your interview will be found at http://localhost:4000/interviews/your-id-here, not your-id-here.getsby.co), and when you&rsquo;re happy with it, just send a pull request. We may make some small modifications (highlighting quotes we think are resonant, making some typography corrections&mdash;e.g., changing &rsquo; to &rsquo;&mdash;and just generally making the style consistent), which we&rsquo;ll then pass back to you for approval. Once you give us final approval, we&rsquo;ll merge your branch and push the updates to our live site.</p>
+					</div>
+				</div>
+			</div>
