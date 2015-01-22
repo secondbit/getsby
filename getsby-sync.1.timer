@@ -4,4 +4,4 @@ Description=getsby sync timer
 [Timer]
 OnBootSec=10min
 OnUnitActiveSec=15min
-Unit=getsby-sync.*.timer
+Unit=getsby-sync.1.service
