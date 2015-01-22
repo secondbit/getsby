@@ -4,16 +4,16 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <channel>
                 <title>gets by</title>
-                <link xmlns="http://www.w3.org/2005/Atom" href="http://getsby.co/feed.xml" rel="self" type="application/rss+xml" />
-                <link>http://getsby.co</link>
+                <link xmlns="http://www.w3.org/2005/Atom" href="https://getsby.co/feed.xml" rel="self" type="application/rss+xml" />
+                <link>https://getsby.co</link>
                 <description>gets by is a collection of stories about living with a mental illness, as told by the tech community.</description>
                 <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
                 <language>en</language>
                 {% for post in site.posts %}<item>
                         <title>{{ post.name }}</title>
-                        <link>http://{{ post.id | split:"/" | last }}.getsby.co</link>
+			<link>https://{{ post.id | split:"/" | last }}.getsby.co</link>
                         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                        <guid isPermaLink="true">http://{{ post.id | split:"/" | last }}.getsby.co</guid>
+                        <guid isPermaLink="true">https://{{ post.id | split:"/" | last }}.getsby.co</guid>
                         <description><![CDATA[{% if post.intro %}{{ post.intro | markdownify | strip_html }}{% else %}{{ post.content | strip_html | truncatewords: 100 }}{% endif %}]]></description>
                         <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
                 </item>{% endfor %}
