@@ -1,0 +1,17 @@
+[Unit]
+Description=getsby sync
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=/usr/bin/docker pull grahamc/jekyll
+ExecStartPre=/usr/bin/docker pull gerasim13/busybox-git
+ExecStartPre=/usr/bin/docker pull busybox
+ExecStartPre=-/usr/bin/docker run -v /etc/ssl/certs/ -v /src -v /var/www --name getsby-data busybox echo Data for getsby
+ExecStartPre=-/usr/bin/docker run --rm --volumes-from getsby-data busybox rm -rf /src/getsby
+ExecStartPre=-/usr/bin/docker run --rm --volumes-from getsby-data gerasim13/busybox-git clone git://github.com/secondbit/getsby.git /src/getsby
+ExecStart=/usr/bin/docker run --rm --volumes-from getsby-data grahamc/jekyll build --source /src/getsby --destination /var/www/getsby
+
+[X-Fleet]
+X-Conflicts=getsby-sync.*.service
+X-Conflicts=hgweb-nginx.*.service
+X-Conflicts=hgweb-nginx-ssl.*.service
