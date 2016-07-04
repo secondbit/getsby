@@ -1,10 +1,11 @@
----
-layout: interview
-name: Philip Roberts
-image: philiproberts.jpg
-twitter: philip_roberts
-intro: "I&rsquo;m a web developer living in Edinburgh, Scotland with my wonderful wife Hilary, and grumpy hedgehog Hogs Boson. I co-founded [Float](http://floatapp.com) and I&rsquo;m about to join [&amp;yet](http://andyet.com) as a proud yeti. I periodically [tweet](https://twitter.com/philip_roberts) and write about my experiences with depression (and other things) at [latentflip.com](http://latentflip.com)."
----
++++
+date = "2013-09-30"
+id = "philiproberts"
+name = "Philip Roberts"
+image = "philiproberts.jpg"
+twitter = "philip_roberts"
+intro = "I&rsquo;m a web developer living in Edinburgh, Scotland with my wonderful wife Hilary, and grumpy hedgehog Hogs Boson. I co-founded [Float](http://floatapp.com) and I&rsquo;m about to join [&amp;yet](http://andyet.com) as a proud yeti. I periodically [tweet](https://twitter.com/philip_roberts) and write about my experiences with depression (and other things) at [latentflip.com](http://latentflip.com)."
++++
 
 ## Diagnosis
 

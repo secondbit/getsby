@@ -1,10 +1,12 @@
----
-layout: interview
-name: Sarah Hawk
-image: ilovethehawk.jpg
-twitter: ilovethehawk
-intro: "I&rsquo;m an ex-programmer now managing an online community of web developers. I live in New Zealand and work remotely from home. I&rsquo;m 39 and the mother of twins. I [tweet](https://twitter.com/ilovethehawk) too much and don&rsquo;t [blog](http://thehawk.wordpress.com/) enough."
----
++++
+date = "2013-11-10"
+id = "ilovethehawk"
+name = "Sarah Hawk"
+image = "ilovethehawk.jpg"
+twitter = "ilovethehawk"
+intro = "I&rsquo;m an ex-programmer now managing an online community of web developers. I live in New Zealand and work remotely from home. I&rsquo;m 39 and the mother of twins. I [tweet](https://twitter.com/ilovethehawk) too much and don&rsquo;t [blog](http://thehawk.wordpress.com/) enough."
++++
+
 ## Diagnosis
 
 6 months ago I was diagnosed with Generalised Anxiety Disorder and mild depression. I still struggle to understand that diagnosis because I don&rsquo;t have any kind of negative thoughts or downs&mdash;I simply have days where nothing feels quite normal and I want it to be bed time so that I don&rsquo;t have to think any more.

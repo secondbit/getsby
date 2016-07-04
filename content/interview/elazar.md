@@ -1,10 +1,11 @@
----
-layout: interview
-name: Matthew Turland
-image: elazar.jpg
-twitter: elazar
-intro: "I&rsquo;m a web developer living and telecommuting from my home in southern Louisiana. I&rsquo;ve authored and co-authored a number of books and articles and spoken at several technical conferences. Outside of my vocation, I&rsquo;m a father of three and an open source hobbyist. I [tweet](http://twitter.com/elazar) and [occasionally blog](http://matthewturland.com)."
----
++++
+date = "2013-10-07"
+id = "elazar"
+name = "Matthew Turland"
+image = "elazar.jpg"
+twitter = "elazar"
+intro = "I&rsquo;m a web developer living and telecommuting from my home in southern Louisiana. I&rsquo;ve authored and co-authored a number of books and articles and spoken at several technical conferences. Outside of my vocation, I&rsquo;m a father of three and an open source hobbyist. I [tweet](http://twitter.com/elazar) and [occasionally blog](http://matthewturland.com)."
++++
 
 ## Diagnosis
 

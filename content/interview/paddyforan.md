@@ -1,10 +1,11 @@
----
-layout: interview
-name: Paddy Foran
-image: paddyforan.jpg
-twitter: paddyforan
-intro: "I&rsquo;m a software developer living in Brooklyn, NY. I&rsquo;m 24 years old. I [write](http://paddy.io/posts), I [talk](http://paddy.io/talks), and I [make things](https://github.com/paddyforan)."
----
++++
+date = "2013-08-25"
+image = "paddyforan.jpg"
+intro = "I&rsquo;m a software developer living in Richland, WA. I’m 27 years old. I [write](https://paddy.io/posts), I [talk](https://paddy.io/talks), and I [make things](https://github.com/paddyforan)."
+name = "Paddy"
+twitter = "paddyforan"
+id = "paddyforan"
++++
 
 ## Diagnosis
 

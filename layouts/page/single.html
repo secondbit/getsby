@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+    <title>Gets By - {{ .Title }}</title>
+    {{ partial "header.html" . }}
+	</head>
+	<body>
+		<div class="bs-header" id="content">
+			<div class="container">
+        {{ partial "masthead.html" . }}
+			</div>
+		</div>
+      <div class="interview">
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+            {{ .Content }}
+					</div>
+				</div>
+			</div>
+		</div>
+    {{ partial "footer.html" . }}
+	</body>
+</html>

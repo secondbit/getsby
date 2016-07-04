@@ -1,9 +1,10 @@
----
-layout: interview
-name: Richard Lampitt
-image: richardlampitt.jpg
-intro: "My name&rsquo;s Richard. I&rsquo;m British, 29 years old. I run an internet services company, concentrating on building systems and websites for SMEs. I have Asperger&rsquo;s and a long-term diagnosis of depression. My website is at [www.latech.co.uk](http://www.latech.co.uk) and my LinkedIn is [http://www.linkedin.com/profile/view?id=15493321](http://www.linkedin.com/profile/view?id=15493321)."
----
++++
+date = "2013-10-07"
+id = "richardlampitt"
+name = "Richard Lampitt"
+image = "richardlampitt.jpg"
+intro = "My name&rsquo;s Richard. I&rsquo;m British, 29 years old. I run an internet services company, concentrating on building systems and websites for SMEs. I have Asperger&rsquo;s and a long-term diagnosis of depression. My website is at [www.latech.co.uk](http://www.latech.co.uk) and my LinkedIn is [http://www.linkedin.com/profile/view?id=15493321](http://www.linkedin.com/profile/view?id=15493321)."
++++
 
 ## Medication
 

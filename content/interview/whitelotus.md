@@ -1,9 +1,10 @@
----
-layout: interview
-name: Anonymous
-image: whitelotus.jpg
-intro: "I am a 26 year old who has their BA in English and enjoys film, literature, playing violin and piano, and various science and technology related interests as well."
----
++++
+date = "2013-09-28"
+id = "whitelotus"
+name = "Anonymous"
+image = "whitelotus.jpg"
+intro = "I am a 26 year old who has their BA in English and enjoys film, literature, playing violin and piano, and various science and technology related interests as well."
++++
 
 ## Diagnosis
 

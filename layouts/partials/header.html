@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="{{ if .Params.intro }}{{ .Params.intro | markdownify | plainify }}{{ end }}">
+<meta name="author" content="{{ .Param "name" }}">
 
 <!-- Gets by core CSS -->
 <link href="/css/style.css" rel="stylesheet">
@@ -21,9 +21,9 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
                 <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
                                <link rel="shortcut icon" href="/assets/ico/favicon.png">
-<link rel="alternate" type="application/rss+xml" title="gets by" href="http://getsby.co/feed.xml" />
-<meta property="og:title" content="{% if page.name %}{{ page.name }} {% endif %}Gets By" />
+<link rel="alternate" type="application/rss+xml" title="gets by" href="https://getsby.co/index.xml" />
+<meta property="og:title" content="{{ if .Params.name }}{{ .Params.name }} {{ end }}Gets By" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://{% if page.id %}{{ page.id | split:"/" | last }}.{% endif %}getsby.co" />
-<meta property="og:image" content="http://getsby.co/img/{% if page.image %}people/{{ page.image }}{% else %}logo.png{% endif %}" />
-<meta property="og:description" content="{% if page.intro %}{{ page.intro | markdownify | strip_html }}{% else %}gets by is a collection of stories about living with a mental illness, as told by the tech community.{% endif %}">
+<meta property="og:url" content="https://{{ if .Params.id }}{{ .Params.id }}.{{ end }}getsby.co" />
+<meta property="og:image" content="https://getsby.co/img/{{ if .Params.image }}people/{{ .Params.image }}{{ else }}logo.png{{ end }}" />
+<meta property="og:description" content="{{ if .Params.intro }}{{ .Params.intro | markdownify | plainify }}{{ else }}gets by is a collection of stories about living with a mental illness, as told by the tech community.{{ end }}">

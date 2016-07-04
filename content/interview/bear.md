@@ -1,10 +1,11 @@
----
-layout: interview
-name: Mike Taylor
-image: bear.jpg
-twitter: bear
-intro: "Currently an Operations developer but is also a generalist and has been in the past one or more of the following: networking specialist, computer repair tech, systems designer, database administrator, tall-ship sailor, and professional curmudgeon."
----
++++
+id = "bear"
+date = "2013-09-28"
+name = "Mike Taylor"
+image = "bear.jpg"
+twitter = "codebear"
+intro = "Currently an Operations developer but is also a generalist and has been in the past one or more of the following: networking specialist, computer repair tech, systems designer, database administrator, tall-ship sailor, and professional curmudgeon."
++++
 
 ## Diagnosis
 

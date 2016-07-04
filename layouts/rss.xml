@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+                <title>gets by</title>
+                <link>https://getsby.co</link>
+		<description>gets by is a collection of stories about living with a mental illness, as told by the tech community.</description>{{ if not .Date.IsZero }}
+		<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+                <language>en</language>
+		{{ range .Data.Pages }}{{ if eq .Section "interview" }}<item>
+                        <title>{{ .Param "name" }}</title>
+			<link>https://{{ .Param "id" }}.getsby.co</link>
+                        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+                        <guid isPermaLink="true">https://{{ .Param "id" }}.getsby.co</guid>
+			<description>{{ if .Params.intro }}{{ .Params.intro | markdownify | html }}{{ else }}{{ .Content | html }}{{ end }}</description>
+		</item>{{ end }}{{ end }}
+        </channel>
+</rss>

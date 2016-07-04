@@ -1,10 +1,11 @@
----
-layout: interview
-name: Thomas David Dalladay
-image: tdd.jpg
-twitter: cordialitea
-intro: "I&rsquo;m a games developer and photographer in my late twenties. I&rsquo;m also co-administer and a writer for Eye of Harmony&mdash;a collaborative Science Fiction blog."
----
++++
+date = "2013-11-09"
+id = "tdd"
+name = "Thomas David Dalladay"
+image = "tdd.jpg"
+twitter = "cordialitea"
+intro = "I&rsquo;m a games developer and photographer in my late twenties. I&rsquo;m also co-administer and a writer for Eye of Harmony&mdash;a collaborative Science Fiction blog."
++++
 
 ## Diagnosis
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<title>{{ .Params.name }} Gets By</title>
+    {{ partial "header.html" . }}
+  </head>
+  <body>
+    <div class="bs-header" id="content">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <img src="/img/people/{{ .Params.image }}" />
+          <h1>{{ .Params.name }} <span class="wordmark"><a href="https://getsby.co">&middot;&nbsp;gets&nbsp;by</a></span></h1>
+				  <div class="intro">{{ .Params.intro | markdownify }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="container bs-docs-container">
+      <div class="row">
+        <article class="col-md-8 col-md-offset-2" role="main">
+          {{ .Content }}
+        </article>
+			</div>
+			<div class="row">
+				<footer class="col-md-8 col-md-offset-2">
+          {{ if or .Params.twitter .Params.adn .Params.facebook .Params.googleplus }}
+  				<p>None of this stuff is easy to talk about. It took a lot of courage for {{ .Params.name }} to be able to share it with you. You should tell them how awesome they are on
+            {{ if .Params.twitter }}Twitter. They&rsquo;re <a href="https://twitter.com/{{.Params.twitter}}" title="{{.Params.name}} on Twitter">@{{.Params.twitter}}</a>. For bonus points, you can also share this interview. Use the hashtag <a href="https://twitter.com/search?q=%23getsby" class="hashtag">#getsby</a> for extra love.
+            {{ else }}
+              {{ if .Params.adn }}
+				App.net. They&rsquo;re <a href="https://alpha.app.net/{{.Params.adn}}" title="{{.Params.name}} on App.net">@{{.Params.adn}}</a>. For bonus points, you can also share this interview. Use the hashtag <a href="https://alpha.app.net/hashtags/getsby" class="hashtag">#getsby</a> for extra love.
+              {{ else }}
+                {{ if .Params.facebook }}
+						Facebook. They&rsquo;re <a href="https://facebook.com/{{.Params.facebook}}" title="{{.Params.name}} on Facebook">{{.Params.name}}</a>. For bonus points, you can also share this interview with your friends!
+						    {{ else }}
+							    {{ if .Params.googleplus }}
+							Google+. They&rsquo;re <a href="https://plus.google.com/{{.Params.googleplus}}" title="{{.Params.name}} on Google+">{{.Params.name}}</a>. For bonus points, you can also share this interview with your friends!
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+					</p>
+          {{ end }}
+					<p>Want to get the latest interviews in your favourite RSS reader? <a href="https://getsby.co/index.xml" title="Interviews RSS feed" id="subscribe-link">Subscribe to the feed</a>.
+					<p class="attribution"><span class="wordmark">gets&nbsp;by</span> is a community project from <a href="http://secondbit.org" title="Second Bit">Second Bit</a> and their friends. <a href="https://getsby.co/about">Find out more.</a> If you want to contribute an interview or know someone who might want to, feel free to <a href="https://getsby.co/contribute" title="Suggest an interviewee">suggest it</a>.</p>
+				</footer>
+			</div>
+		</div>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

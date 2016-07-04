@@ -1,9 +1,10 @@
----
-layout: interview
-name: Anonymous
-image: redsquirrel.jpg
-intro: "I&rsquo;m a 23-year-old web developer and sysadmin type living in a mystery location somewhere in the UK."
----
++++
+id = "redsquirrel"
+date = "2013-09-29"
+name = "Anonymous"
+image = "redsquirrel.jpg"
+intro = "I&rsquo;m a 23-year-old web developer and sysadmin type living in a mystery location somewhere in the UK."
++++
 
 ## Diagnosis
 
