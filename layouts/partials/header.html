@@ -4,26 +4,26 @@
 <meta name="author" content="{{ .Param "name" }}">
 
 <!-- Gets by core CSS -->
-<link href="/css/style.css" rel="stylesheet">
+<link href="{{.Site.BaseURL }}css/style.css" rel="stylesheet">
 
 <!-- Google Fonts -->
 <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic|PT+Serif:400italic' rel='stylesheet' type='text/css'>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="/assets/js/html5shiv.js"></script>
-  <script src="/assets/js/respond.min.js"></script>
+	<script src="{{ .Site.BaseURL }}assets/js/html5shiv.js"></script>
+	<script src="{{ .Site.BaseURL }}assets/js/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
-                               <link rel="shortcut icon" href="/assets/ico/favicon.png">
-<link rel="alternate" type="application/rss+xml" title="gets by" href="https://getsby.co/index.xml" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ .Site.BaseURL }}assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ .Site.BaseURL }}assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ .Site.BaseURL }}assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}assets/ico/favicon.png">
+<link rel="alternate" type="application/rss+xml" title="gets by" href="{{ .Site.BaseURL }}index.xml" />
 <meta property="og:title" content="{{ if .Params.name }}{{ .Params.name }} {{ end }}Gets By" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://{{ if .Params.id }}{{ .Params.id }}.{{ end }}getsby.co" />
-<meta property="og:image" content="https://getsby.co/img/{{ if .Params.image }}people/{{ .Params.image }}{{ else }}logo.png{{ end }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}img/{{ if .Params.image }}people/{{ .Params.image }}{{ else }}logo.png{{ end }}" />
 <meta property="og:description" content="{{ if .Params.intro }}{{ .Params.intro | markdownify | plainify }}{{ else }}gets by is a collection of stories about living with a mental illness, as told by the tech community.{{ end }}">
