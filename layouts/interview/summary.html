@@ -2,7 +2,7 @@
 				<div class="container">
 					<div class="col-md-8 col-md-offset-2">
 						<a href="https://{{ .Params.id }}.getsby.co">
-							<img src="/img/people/{{ .Params.image }}" />
+							<img src="{{ .Site.BaseURL }}img/people/{{ .Params.image }}" />
 							<h1 class="name">{{ .Params.name }}</h1>
 						</a>
 						<span class="intro">{{ .Params.intro | markdownify }}</span>

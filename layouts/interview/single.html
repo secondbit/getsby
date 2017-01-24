@@ -8,8 +8,8 @@
     <div class="bs-header" id="content">
       <div class="container">
         <div class="col-md-8 col-md-offset-2">
-          <img src="/img/people/{{ .Params.image }}" />
-          <h1>{{ .Params.name }} <span class="wordmark"><a href="https://getsby.co">&middot;&nbsp;gets&nbsp;by</a></span></h1>
+					<img src="{{ .Site.BaseURL }}img/people/{{ .Params.image }}" />
+					<h1>{{ .Params.name }} <span class="wordmark"><a href="{{ .Site.BaseURL }}">&middot;&nbsp;gets&nbsp;by</a></span></h1>
 				  <div class="intro">{{ .Params.intro | markdownify }}</div>
         </div>
       </div>
@@ -40,8 +40,8 @@
             {{ end }}
 					</p>
           {{ end }}
-					<p>Want to get the latest interviews in your favourite RSS reader? <a href="https://getsby.co/index.xml" title="Interviews RSS feed" id="subscribe-link">Subscribe to the feed</a>.
-					<p class="attribution"><span class="wordmark">gets&nbsp;by</span> is a community project from <a href="http://secondbit.org" title="Second Bit">Second Bit</a> and their friends. <a href="https://getsby.co/about">Find out more.</a> If you want to contribute an interview or know someone who might want to, feel free to <a href="https://getsby.co/contribute" title="Suggest an interviewee">suggest it</a>.</p>
+					<p>Want to get the latest interviews in your favourite RSS reader? <a href="{{ .Site.BaseURL}}index.xml" title="Interviews RSS feed" id="subscribe-link">Subscribe to the feed</a>.
+						<p class="attribution"><span class="wordmark">gets&nbsp;by</span> is a community project from <a href="http://secondbit.org" title="Second Bit">Second Bit</a> and their friends. <a href="{{.Site.BaseURL}}about">Find out more.</a> If you want to contribute an interview or know someone who might want to, feel free to <a href="{{ .Site.BaseURL }}contribute" title="Suggest an interviewee">suggest it</a>.</p>
 				</footer>
 			</div>
 		</div>
