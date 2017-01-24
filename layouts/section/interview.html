@@ -1,0 +1,11 @@
+{{ range .Site.Pages }}{{ if .Params.id }}{{ .Params.id }}.getsby.co {
+  gzip
+  log / stdout "{when} [{remote}] {method} {scheme} {host} {uri} --> {status} {latency} {size}"
+  root /var/www/getsby.co/public/interview/{{ .Params.id }}
+  tls paddy@impractical.co
+  errors {
+    404 404.html
+  }
+}
+
+{{ end }}{{ end }}
