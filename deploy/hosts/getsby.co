@@ -1,0 +1,64 @@
+server {
+	listen 80;
+	listen [::]:80;
+
+	include /etc/nginx/expires.conf;
+
+	server_name getsby.co;
+	root /usr/share/nginx/html/getsby.co;
+
+	index index.html;
+
+	location = /feed.xml {
+		return 301 https://getsby.co/index.xml;
+	}
+
+	location /health {
+		expires -1;
+		add_header Content-Type text/plain;
+		return 200 'OK';
+	}
+
+	if ($http_x_forwarded_proto = "http") {
+		return 301 https://getsby.co$request_uri;
+	}
+}
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name www.getsby.co;
+
+	location / {
+		expires max;
+		add_header Cache-Control "public";
+		return 301 https://getsby.co$request_uri;
+	}
+}
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	include /etc/nginx/expires.conf;
+
+	server_name ~^(?<name>\w+)\.getsby\.co$ ;
+	root /usr/share/nginx/html/getsby.co/interview/$name/;
+
+	index index.html;
+
+	location /css {
+		alias /usr/share/nginx/html/getsby.co/css;
+	}
+	location /img {
+		alias /usr/share/nginx/html/getsby.co/img;
+	}
+	location /js {
+		alias /usr/share/nginx/html/getsby.co/js;
+	}
+
+	if ($http_x_forwarded_proto = "http") {
+		return 301 https://$1.getsby.co$request_uri;
+	}
+}

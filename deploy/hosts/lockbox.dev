@@ -1,0 +1,42 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	include /etc/nginx/expires.conf;
+
+	root /usr/share/nginx/html/lockbox.dev;
+
+	server_name lockbox.dev;
+	index index.html;
+
+	location /health {
+		expires -1;
+		add_header Content-Type text/plain;
+		return 200 'OK';
+	}
+
+	if ($http_x_forwarded_proto = "http") {
+		return 301 https://lockbox.dev$request_uri;
+	}
+}
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	include /etc/nginx/expires.conf;
+
+	server_name www.lockbox.dev;
+
+	location / {
+		expires max;
+		add_header Cache-Control "public";
+		return 301 https://lockbox.dev$request_uri;
+	}
+
+	location /health {
+		expires -1;
+		add_header Content-Type text/plain;
+		return 200 'OK';
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"options": {
+		"automapSubstitutions": true,
+		"logging": "CLOUD_LOGGING_ONLY"
+	},
+	"steps": [
+		{
+			"name": "us-central1-docker.pkg.dev/${PROJECT_ID}/docker-main/hugo",
+			"args": [
+				"--cleanDestinationDir",
+				"--config", "config.toml",
+				"-d", "/workspace/public/getsby.co"
+			]
+		},
+		{
+			"name": "bash",
+			"script": "#!/usr/bin/env bash\necho \"Build ${BUILD_ID} from ${SHORT_SHA}\" > /workspace/public/getsby.co/version.txt"
+		},
+		{
+			"name": "gcr.io/cloud-builders/docker",
+			"args": [
+				"build",
+				"--tag=us-central1-docker.pkg.dev/${PROJECT_ID}/docker-main/getsby-co",
+				"."
+			]
+		}
+	],
+	"images": [
+		"us-central1-docker.pkg.dev/${PROJECT_ID}/docker-main/getsby-co"
+	]
+}
