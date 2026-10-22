@@ -1,9 +1,8 @@
 +++
 date = "2013-08-25"
 image = "paddyforan.jpg"
-intro = "I&rsquo;m a software developer living in Richland, WA. I’m 27 years old. I [write](https://paddy.io/posts), I [talk](https://paddy.io/talks), and I [make things](https://github.com/paddyforan)."
+intro = "I&rsquo;m a software developer living in Olympia, WA. I’m 36 years old. I [write](https://paddy.carvers.com/posts), I [talk](https://paddy.carvers.com/talks), and I [make things](https://github.com/paddycarver)."
 name = "Paddy"
-twitter = "paddyforan"
 id = "paddyforan"
 +++
 
