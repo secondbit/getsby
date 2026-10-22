@@ -2,3 +2,4 @@ baseurl = "https://getsby.co/"
 languageCode = "en-us"
 title = "Gets By"
 publishDir = "public/getsby.co"
+disableKinds = ["taxonomy", "term"]

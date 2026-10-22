@@ -5,8 +5,8 @@
 		<description>gets by is a collection of stories about living with a mental illness, as told by the tech community.</description>{{ if not .Date.IsZero }}
 		<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
                 <language>en</language>
-		{{ range .Data.Pages }}{{ if eq .Section "interview" }}<item>
-                        <title>{{ .Param "name" }}</title>
+		{{ range $.Site.Pages }}{{ if and .Params.name (eq .Section "interview") }}<item>
+                        <title>{{ .Params.name }}</title>
 			<link>https://{{ .Param "id" }}.getsby.co</link>
                         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
                         <guid isPermaLink="true">https://{{ .Param "id" }}.getsby.co</guid>

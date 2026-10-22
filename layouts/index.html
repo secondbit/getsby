@@ -11,8 +11,8 @@
 			</div>
 		</div>
 		<div class="interviews">
-      {{ range .Data.Pages }}
-        {{ if eq .Section "interview" }}
+      {{ range $.Site.Pages }}
+        {{ if and .Params.name (eq .Section "interview") }}
           {{ .Render "summary" }}
         {{ end }}
       {{ end }}
